@@ -24,6 +24,23 @@ export default class Login extends React.Component  {
   componentDidMount() {
     this._loadFontsAsync();
   }
+  loginUser(){
+    fetch('https://us-central1-aiot-fit-xlab.cloudfunctions.net/santailogin ', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({"email":"user@example.com","password":"123456"}
+          )
+})
+    .then((response) => response.json())
+    .then((responseJson) => {
+console.log(responseJson);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+  }
 
   render(){
     if (this.state.fontsLoaded) {
