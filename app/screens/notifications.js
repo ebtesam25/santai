@@ -30,22 +30,6 @@ export default class Notifications extends React.Component  {
   }
   
 
-_getCauses(){
-  fetch('https://us-central1-aiot-fit-xlab.cloudfunctions.net/bethechangegetcauses', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({"category": "all"})
-})
-    .then((response) => response.json())
-    .then((responseJson) => {
-console.log(responseJson);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-}
   
  
 
@@ -55,16 +39,7 @@ console.log(responseJson);
       
     title:"Google Nest Hub",
   },
-  {
-      
-    title:"Google Nest Hub",
-  }, {
-      
-    title:"Google Nest Hub",
-  }, {
-      
-    title:"Google Nest Hub",
-  },
+ 
   
   ]
   }

@@ -18,7 +18,7 @@ export default function Success({ route}) {
                  <Image source={require('../assets/driving.png')} style={styles.photo} />
 
                  <Text style={styles.title}>Invoice</Text>
-                 <Text style={styles.description}>x1 {title} ----------------------${price}</Text>
+                 <Text style={styles.description}>x1 {title} ------------------${price}</Text>
                  <Text style={styles.description}>+Shipping ----------------------------------$20</Text>
                  <Text style={styles.name}>Total ------------------------------${price+20}</Text>
 

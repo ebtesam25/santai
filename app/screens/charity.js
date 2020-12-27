@@ -57,14 +57,19 @@ console.log(responseJson);
   },
   {
       
-    title:"United Way Worldwide",
+    title:"Feeding America",
   }, {
       
-    title:"United Way Worldwide",
+    title:"American Cancer Society",
   }, {
       
-    title:"United Way Worldwide",
+    title:"American Heart Association",
   },
+  {
+      
+    title:"Salvation Army",
+  },
+  
   
   ]
   }
