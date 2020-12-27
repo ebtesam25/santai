@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 20,
-        color:'#227F74',
+        color:'#4C541B',
         fontFamily:'FuturaH',
         marginTop: '5%',
         marginBottom:'5%',

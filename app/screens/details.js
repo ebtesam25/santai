@@ -32,7 +32,6 @@ export default function Details({ route}) {
    <Text style={{position:'relative',fontSize:20,textAlign:'left', color:'#FFF', fontFamily:'FuturaH', marginTop:'5%',  paddingLeft:'5%', width:'100%', alignSelf:'center'}}>Donations</Text>
    <Text style={{position:'relative',fontSize:17, textAlign:'left', color:'#FFF', fontFamily:'FuturaL', marginTop:'2.5%', paddingLeft:'5%',  width:'100%',marginBottom:'5%', alignSelf:'center'}}>Last donation 48m ago</Text>
    <View style={{flexDirection:'row'}}>
-   <Image source={require('../assets/donors.png')} style={{marginLeft:'5%', paddingBottom:'10%', marginBottom:'10%'}}></Image>
    <Text style={{color:'#FFF', fontFamily:'FuturaH', marginTop:'2.5%'}}>+380</Text>
    </View>
 

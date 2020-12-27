@@ -12,7 +12,7 @@ CardList = ({ itemList}) => (
     <View>
         
         <FlatList
-        style={{height:'90%'}}
+        style={{height:'85%'}}
                 numColumns={2}
                 data={itemList}
                 renderItem={({ item }) => <Card
