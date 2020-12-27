@@ -10,7 +10,7 @@ import tweepy
 import time
 from nltk.corpus import stopwords  
 from nltk.tokenize import word_tokenize 
-
+import nltk
 from textblob import TextBlob
 from collections import Counter
 import re
@@ -30,16 +30,17 @@ textwords = []
 
 for tweet in usertweets:
     t = tweet.text.lower()
-    text_blob_object = TextBlob(t)
+    
     word_tokens = word_tokenize(t)
+    pos_tagged_sent = nltk.pos_tag(nltk.tokenize.word_tokenize(t))
+
+    nouns = [tag[0] for tag in pos_tagged_sent if tag[1]=='NN']
     filtered_sentence = []  
   
-    for w in word_tokens:  
+    for w in nouns:  
         if w not in stop_words and w.isalpha():  
             textwords.append(w)
-    #for noun_phrase in text_blob_object.noun_phrases:
-    #        textwords.append(noun_phrase)
-    #        print(noun_phrase)
+
 counter_obj = Counter(textwords)
 #print(counter_obj)
 top = counter_obj.most_common()
